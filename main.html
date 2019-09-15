@@ -1,0 +1,267 @@
+<!doctype html>
+
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Syrian Refugee Report</title>
+    <meta name="description" content="Report on the Syrian Refugee Crisis">
+    <meta name="author" content="William Yu">
+
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/timeline.css">
+
+    <script src="https://kit.fontawesome.com/c12243ab52.js"></script>
+    <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.4.1,npm/moment@2.24.0,npm/chart.js@2.8.0"></script>
+
+</head>
+
+<body>
+    <div class="header" id="top">
+        <h1> Syrian Refugee Crisis </h1>
+        <h2> Sixth Form Report</h2>
+        <h4> By William Yu</h4>
+    </div>
+
+    <div class="topBtn">
+        <a href="#top">Top</a>
+    </div>
+
+    <div class="table">
+        <p class = "tableTitle">Contents</p>
+        <ul class = "tableList">
+            <li class="tableItem">
+                <a href="#Crisis" class="tableLink">
+                    What is the Crisis?
+                </a>
+            </li>
+            <li class="tableItem">
+                <a href="#Begin" class="tableLink">
+                    When Did the Crisis Begin?
+                </a>
+            </li>
+            <li class="tableItem">
+                <a href="#TurkeyLebanon" class="tableLink">
+                    What are the Impacts on Turkey and Lebanon?
+                </a>
+            </li>
+            <li class="tableItem">
+                <a href="#Europe" class="tableLink">
+                    What is Happening in Europe?
+                </a>
+            </li>
+            <li class="tableItem">
+                <a href="#Sources" class="tableLink">
+                    Sources
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+
+    <div id=Crisis class="textbox">
+        <h3>What is the Syrian Refugee Crisis?</h3>
+        <p>
+            &nbsp&nbsp&nbsp&nbsp A <strong>Refugee Crisis</strong> can refer to large movements of people displaced from their homes, both within a nation or across borders. These people are escaping from push factors whence they came – naturally occurring or anthropogenic – which negatively impact their economic, political, social, or environmental security.
+            By the end of 2018, just under 
+                <strong> 75 million people</strong> worldwide were designated people of concern – of which, 
+                <strong> 25.9m </strong> were refugees, 
+                <strong> 3.5m</strong> were asylum seekers, and 
+                <strong> 41.3m</strong> internally displaced persons (IDPs). 
+            <a href="#1"><strong>[1]</strong></a>
+            However, it is often hard to quantify migrant numbers, due to the difficulty of monitoring entry and exit into and out of countries. Most figures in this report reflect the
+            <strong> number of migrants registered in countries. </strong>
+            <br>
+            <br>
+            Most of this increase was between 2012 and 2015, driven mainly by the Syrian conflict. But conflicts in other areas also contributed to this rise, including Iraq, Yemen, the Democratic Republic of the Congo (DRC) and South Sudan, as well as the massive flow of Rohingya refugees from Myanmar to Bangladesh at the end of 2017.
+            <br>
+        </p>
+
+        <div class="chart">
+            <h5 class="chartLabel">International Refugees and Internally Displaced Persons</h5>
+            <canvas id="internationalChart" width="500" height="250"></canvas>
+        </div>
+
+        <p>
+            &nbsp&nbsp&nbsp&nbsp The cause of the international Syrian refugee crisis can be traced back to the 
+                <strong>Arab Spring uprisings in 2010-11,</strong> which inspired similar major protests in Syria. 
+                Conflict largely between the Syrian army, and armed protestors and defected soldiers rapidly devolved into civil war across the country. Millions of Syrians fled across borders, escaping artillery and bullets which devastated homes and cities. 
+                <strong>Since 2011,</strong> over 
+                <strong> 5.6 million people </strong>have fled Syria, while
+                <strong> 6.6 million </strong> have been internally displaced within the country.
+                <a href="#2"><strong>[2]</strong></a>
+                 Families were driven out of their homes, and thousands of people fled out of the country due to the conflict.
+        </p>
+    </div>
+
+    
+    <div id="Begin" class="textbox">
+        <h3>When Did the Crisis Begin?</h3>
+        <p>
+            <strong> In March 2011, </strong> the government, cracking down on public demonstrations, gradually increased to violence and eventually major military operations. Clashes largely were between the Syrian army, and armed protestors and defected soldiers. As the country developed into civil war, casualties mounted – over 
+            <strong>half a million people</strong> died in the war, including around
+            <strong>200 thousand civilians,</strong> until it ended on
+            <strong>June 15th 2017.</strong>
+            <a href="#3"><strong>[3]</strong></a>
+            As armies assaulted various locations and battled, entire villages were trying to escape, with thousands of refugees a day crossing borders.
+            <a href="#4"><strong>[4]</strong></a>
+        </p>
+    </div>
+
+    <div class="timeline">
+        <h2>Timeline of Events <a href="#5"><strong>[5]</strong></a>  </h2> 
+           
+    </div>
+
+    <div id="Number" class="textbox">
+        <h3>Where are the Greatest Number of Refugees?</h3>
+        <p>
+                Refugees have fled en masse to neighbouring countries and beyond. The largest number of registered refugees is Turkey, at 
+                <strong> 3.3 million. 1.5 million </strong> are in Lebanon, where
+                <strong> 70% live below the poverty line, </strong> and there are 
+                <strong> 655 thousand in Jordan. </strong> Iran hosts
+                <strong> more than 246 thousand, </strong> while Egypt hosts 
+                <strong> more than 126 thousand. </strong>
+                <a href="#6"><strong>[6]</strong></a>
+        </p>
+        <div class="chart">
+            <h5 class="chartLabel">Distribution of Top 5 Refugee Destination Countries</h5>
+            <canvas id="distribChart" width="500" height="250"></canvas>
+        </div>
+    </div>
+
+    <div id="TurkeyLebanon" class="textbox">
+        <h3>What are the Impacts on Turkey and Lebanon?</h3>
+        <p class="splitText">
+            In Lebanon, the impact has been severe – the influx of migrants is a 
+            <strong>third of the native population, which totalled 4.5 million before the crisis. </strong> This 
+            <strong> 30% growth </strong> in population makes Lebanon the country with the highest per capita concentration of refugees worldwide. Moreover, given the situation in neighbouring Syria, Lebanon’s own government has seen immense political instability that has seen 
+            <strong> in a deadlock for the last 3 years. </strong> This has made it difficult to formulate policy on both dealing with the incoming migrants and maintaining infrastructure for providing basic services to the original Lebanese population. 
+            <br>
+            <br>
+            The stance in Lebanon is firm in opposition against refugees and migrants, due to their history of having accepted 
+            <strong> to 280,000 Palestinian refugees. </strong> Recently, the Lebanese government has begun to subtly coerce refugees to leave: in the last few months authorities have cracked down on Beirut’s service industry, threatening fines to employers whose Syrian staff do not have long-term residence and work permits. Authorities have also started to detain and deport refugees who have entered the country illegally:
+            <strong> in May, 2019, 301 Syrians </strong> were deported on the grounds of having entered the country illegally after the 24th April.
+            <a href="#7"><strong>[7]</strong></a>
+            <br>
+            In Turkey, whose open-door policy towards refugees has left it as the world’s largest refugee-hosting country, the
+            <strong> the 3.5 million refugees </strong> who have entered now constitute
+            <strong> 3.5% of the host country’s population. </strong> This figure only represents the number of registered migrants; the true estimated value is 
+            <strong> three to four hundred thousand people higher. </strong> The impact of the massive wave of migrants has led to breakdowns between the migrant and host communities, such as instances of violence and enmity between them. In the second half of 2017, intercommunal violence between host communities and Syrian refugees
+            <strong> tripled </strong> compared to the same time period in 2016. During 2017, 
+            <strong> at least 35 people died </strong> during such conflicts, of which
+            <strong> 27 were Syrian. </strong>
+            <a href="#8"><strong>[8]</strong></a>
+            <br>
+            <br>
+            The conflicts have contributed to the Turkish people feeling that the Syrian refugee population is causing economic downfall within the country: fears of undercutting jobs, increased unemployment and increased rental and housing costs underpin this sentiment. A survey of Turkish citizens in Istanbul published in December 2016 found that 
+            <strong> 72 per cent </strong> felt uncomfortable encountering Syrians and 
+            <strong> 76 per cent </strong> had no sympathy for the refugees.
+            <a href="#8"><strong>[8]</strong></a>    
+        </p>
+    </div>
+
+    <div id="Europe" class="textbox">
+        <h3>What are the Impacts on Europe?</h3>
+        <div class="chart">
+            <h5 class="chartLabel">Refugee Entry into Europe <a href="#9"><strong>[9]</strong></a> </h5>
+            <canvas id="europeChart" width="500" height="250"></canvas>
+        </div>
+        <p>
+                The impacts in Europe were most pronounced in 2015, following Turkey’s own migrant crisis. The so-called European migrant crisis (also known as the refugee crisis) was a period beginning in 2015, and involved large numbers of people arriving in European Union member states. Between January 2015 and March 2016,
+            <strong> 46.7% of the over one million Mediterranean Sea arrivals </strong> were Syrian. By mid 2015, there were 
+            <strong> more than 313 thousand asylum applications </strong> across Europe – the largest being in Germany, at
+            <strong> 89 thousand,  </strong> followed by Sweden at 
+            <strong> 62 thousand </strong> – by December 2017, the UNHCR counted 
+            <strong> one million </strong> asylum applications for Syrian refugees in the European Union.
+            <a href="#10"><strong>[10]</strong></a>  
+            <br><br>
+            Integration is a major challenge in Europe (and indeed any country) – this is only exacerbated by the fact that many refugees would like to return home once the region is safe again, which can lead to low attachment to a new country. Moreover, there often a language barrier between refugee diasporas and host communities: a UNHCR report has additionally found that language tuition schemes in host countries is widely stated to be too low for practical use. 
+            <a href="#11"><strong>[11]</strong></a>
+            This inhibits refugees from finding employ after immigrating to a new country, and contributes to both anxiety for refugees as well as distrust from the local population. This can brew into conflict between groups, stemming from racism and xenophobia.
+            <br><br>
+            In the UK, the Syrian Vulnerable Persons Resettlement Scheme has been developed to ease the integration of Syrian refugees and asylum seekers. Launched in January 2014, the scheme provides support to Syrian refugees, helping them to resettle across Yorkshire & Humberside. Staff and volunteers give ongoing support, answering to refugees’ wider needs regarding life in the UK.
+            <strong> 7,307 people </strong> had been resettled under the scheme by March 2017.
+            <a href="#12"><strong>[12]</strong></a>
+            <br><br>
+            Germany’s apprenticeship scheme assists and helps refugees into vocational training, leveraging the skill force entering the country for its own economic growth. This program benefits from the demographic of the immigrants – 
+            <strong> 60% of whom are 25 or younger </strong> – and both allows them to gain the skills necessary to fulfil and maintain a skilled job, as well as supporting Germany’s own struggling workforce. 
+            <a href="#13"><strong>[13]</strong></a>
+            <br><br>
+            Aid has also been provided by many European states: the EU altogether provided 
+            <strong> €374 in humanitarian assistance </strong>2015 alone, having mobilised almost 
+            <strong> €17 billion overall (including €2 billion for 2019). 
+            <a href="#14">[14]</a></strong>
+             The United Kingdom has provided 
+            <strong> £1 billion to over 30 aid organisations and partners </strong> including UN agencies, international NGOs and the Red Cross. Aid has primarily been used towards providing for the needs of the most vulnerable people in Syria and neighbouring countries (e.g the UNHCR helps those in vulnerable situations with cash for medicine and food, stoves and fuel for heating, insulation for tents, thermal blankets and winter clothing
+            <a href="#6"><strong>[6]</strong></a>
+            ).
+        </p>
+    </div>
+    
+    <div id="Sources" class="sources">
+        <h3> Sources </h3>
+        
+        <ol>
+            
+            <li>
+                <a id="1" href="https://www.unhcr.org/globaltrends2018/">International Migration Figures from the United Nations High Commissioner for Refugees (UNHCR)</a>
+            </li>
+            <li>
+                <a id="2" href="https://data2.unhcr.org/en/situations/syria">Syrian Refugee Figures from UNHCR</a>
+            </li>
+            <li>
+                <a id="3" href="http://www.syriahr.com/en/?p=70012">Figures for Casualties from The Syrian Observatory for Human Rights</a>
+            </li>
+            <li>
+                <a id="4" href="https://www.reuters.com/article/us-syria/syrian-troops-near-turkey-border-refugees-flee-idUSTRE75J0AV20110623">Reuters Article on Refugee Movement</a>
+            </li>
+            <li>
+                <a id="5" href="https://www.unhcr.org/ph/13427-seven-years-timeline-syria-crisis.html">UNHCR Timeline</a>
+            </li>
+            <li>
+                <a id="6" href="https://www.unhcr.org/uk/syria-emergency.html">UNHCR Website</a>
+            </li>
+            <li>
+                <a id="7" href="https://foreignpolicy.com/2019/07/31/lebanon-is-sick-and-tired-of-syrian-refugees/">Article on Lebanese Refugees from Foreign Policy</a>
+            </li>
+            <li>
+                <a id="8" href="https://www.crisisgroup.org/europe-central-asia/western-europemediterranean/turkey/248-turkeys-syrian-refugees-defusing-metropolitan-tensions">Report by the International Crisis Group</a>
+            </li>
+            <li>
+                <a id="9" href="https://ec.europa.eu/eurostat/en/web/products-datasets/-/MIGR_ASYAPPCTZA">Eurostat figures on European Migration</a>
+            </li>
+            <li>
+                <a id="10" href="https://www.reuters.com/article/us-europe-migrants-idUSKBN0U50WI20151222">Reuters Article on Migration Crisis</a>
+            </li>
+            <li>
+                <a id="11" href="https://www.unhcr.org/uk/protection/operations/52403d389/new-beginning-refugee-integration-europe.html">UNHCR Report on Migrant Integration</a>
+            </li>
+            <li>
+                <a id="12" href="https://www.refugeecouncil.org.uk/latest/projects/syrian-resettlement-programme-vprs/">UK Refugee Council Page</a>
+            </li>
+            <li>
+                <a id="13" href="https://www.washingtonpost.com/world/europe/angela-merkel-welcomed-refugees-to-germany-theyre-starting-to-help-the-economy/2019/05/03/4bafa36e-6b60-11e9-bbe7-1c798fb80536_story.html">Washington Post Article</a>
+            </li>
+            <li>
+                <a id="14" href="https://ec.europa.eu/echo/where/middle-east/syria_en">European Commission Aid Report</a>
+            </li>
+            
+            
+        </ol>
+        
+    </div>
+    
+    <script type="text/javascript" src="js/anime.min.js"></script>
+    <script type="text/javascript" src="data/amCharts.js"></script>
+    <script type="text/javascript" src="js/graphs.js"></script>
+    <script type="text/javascript" src="js/anime.js"></script>
+    <script type="text/javascript" src="js/timeline.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    
+</body>
+
+</html>
